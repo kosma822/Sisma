@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eee">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Titolo"
+        style="?android:attr/textAppearanceMedium"
+        android:id="@+id/tv_title"
+        android:layout_toLeftOf="@+id/tv_mag"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:maxLines="1"
+        android:ellipsize="end"
+        android:layout_margin="10dp" />
+
+    <TextView
+        android:text="MAG"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_mag"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_margin="10dp"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.Large"
+        android:textColor="#922" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title"
+        android:layout_alignLeft="@+id/tv_title"
+        android:layout_alignStart="@+id/tv_title"
+        android:id="@+id/tv_lat"
+        android:textColor="#555555" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lat"
+        android:layout_alignLeft="@+id/tv_lat"
+        android:layout_alignStart="@+id/tv_lat"
+        android:id="@+id/tv_lng"
+        android:layout_marginBottom="10dp"
+        android:textColor="#555555" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_lng"
+        android:layout_alignLeft="@+id/tv_lng"
+        android:layout_alignStart="@+id/tv_lng"
+        android:id="@+id/tv_data"
+        android:layout_marginBottom="10dp"
+        android:textColor="#999999" />
+
+
+</RelativeLayout>
